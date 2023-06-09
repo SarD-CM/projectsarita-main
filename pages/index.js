@@ -15,6 +15,7 @@ import Logo from '../components/Images';
 import { BiAlbum, BiTrendingUp, BiAlarmSnooze, BiTimeFive } from "react-icons/bi";
 import { IoInvertModeSharp, IoAnalyticsOutline } from "react-icons/io5";
 import {GiSpeedometer} from "react-icons/gi";
+import {TbDelta} from "react-icons/tb";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -203,7 +204,12 @@ export default function Home() {
             <div className='text-center flex justify-center items-center'>
               <div>
                 <h1 className="font-extrabold text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-indigo-600 from-sky-400">{data2?.percentage} </span></h1>
-                <p className="text-lg text-[#175873]">Average</p>
+                <p className="text-lg text-[#175873]">
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none animate-pulse">
+                   <TbDelta />
+                  </span>
+                  Delta
+                </p>
               </div>
             </div>
           </div>
