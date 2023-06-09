@@ -54,7 +54,7 @@ export default function Home() {
     const intervalId  = setInterval(() => {
       fetchData();
       fetchData2();
-    }, 500);
+    }, 50);
 
 
     return () => {
